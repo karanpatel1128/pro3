@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let fullName = "alex mahome welcome to the zungle";
+    let fullNameArr = fullName.split(' ');
+    console.log("fullNameArr", fullNameArr);
+    // First Method
+    let updatedFullName = fullNameArr[0].charAt(0).toUpperCase() + fullNameArr[0].slice(1);
+    updatedFullName += " " + fullNameArr[1].charAt(0).toUpperCase() + fullNameArr[1].slice(1);
+    console.log("updatedFullName", updatedFullName);
+
+    //Second Method
+    let generatedFullName = "";
+    for(let index = 0; index < fullNameArr.length; index++){
+        generatedFullName += fullNameArr[index].charAt(0).toUpperCase() + fullNameArr[index].slice(1);
+        if(index < fullNameArr.length){
+            generatedFullName = generatedFullName+" ";
+        }
+    }
+    console.log("generatedFullName", generatedFullName);
+
+    let todaysDate = new Date();
+    console.log("todaysDate", todaysDate);
+
+    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    console.log("todaysDate.getmonth()", todaysDate.getMonth());
+
+    let monthNumber = todaysDate.getMonth();
+    let currentMonth = months[monthNumber];
+    console.log("currentMonth", currentMonth);
+
+    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let dayNumber = todaysDate.getDay();
+    let todayDay = days[dayNumber];
+    console.log('todayDay', todayDay);
+    
+    
+</script>
