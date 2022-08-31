@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>for loop </h1>
     <input type="number" id="starPrint" class="starprint" placeholder="star">
@@ -16,32 +18,17 @@
     <input type="button" value="star revers" onclick="starMain()">
     <p id="mainId"></p>
 </body>
+
 </html>
 <script>
+    let x = 5;
+    let z = 1;
+    let sum = 1;
+    for (let y = 1; y <= x; y++) {
+        if (y % 2 == 0) {
 
-function starId() {
-    let usernumber=document.getElementById("starPrint").value;
-    let output="";
-    for(let x=1; x<=usernumber; x++){
-    for(let y=1; y<=x; y++){
-    output=output+"*";
+            sum++;
+        }
+        console.log(sum);
     }
-    output=output+"<br/>";
-    }
-    document.getElementById("mainPara").innerHTML=output;
-    console.log(output);
-}
-
-function starMain() {
-    let user=document.getElementById("starRevers").value;
-    let sum="";
-    for(let a=1; a<=user; a++){
-    for(let b=a; b<=user; b++){
-    sum = sum+"*";
-    }
-    sum = sum+"<br/>";
-    }
-    document.getElementById("mainId").innerHTML=sum;
-    console.log(sum);
-}
 </script>
